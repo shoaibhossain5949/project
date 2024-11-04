@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed Selector</title>
+    <style>
+        *{
+            /* margin: 0; */
+        }
+        /* p{
+            color: brown;
+        } */
+        #forth, li {
+           font-size: 26px;
+        }
+
+       .holud, .c1{
+            background-color: aqua;
+        }
+        .bold{
+            font-weight: 800;
+        }
+        input[type="password"] {
+            font-size: 30px;
+            color: brown;
+        }
+        .lin{
+            color: blue;
+        }
+        .block{
+            background-color: darkcyan;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Explor Mixed selector</h3>
+    <p>My first <span class="lin">line css</span> </p>
+    <p class="c1">My secount line css </p>
+    <p class="c1 bold">My Third line css </p>
+    <p class="holud" id="forth">My forht line css </p>
+    <p>My fifth line css </p>
+    <p  class="bold">My sixth line css </p>
+    <p>My seventh line css </p>
+    <ol>
+        <li>element selector</li>
+        <li>id selector</li>
+        <li class="bold holud">class slector</li>
+        <li>univarsal slector</li>
+    </ol>
+
+    <div class="block">
+        <h3>block</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero natus facere minima magnam officiis sint odio atque eveniet aperiam, provident exercitationem fuga amet. Accusantium a necessitatibus, fugit quos nulla pariatur!</p>
+    </div>
+    <form>
+        <input type="text">
+        <input type="password">
+    </form>
+</body>
+</html>

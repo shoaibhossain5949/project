@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid area Layout</title>
+    <style>
+        .header, .nav, .main, .sideber, .advertisment, footer{
+            background-color: bisque;
+            border: 2px solid teal;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .header{
+            grid-area: h        ;
+        }
+       
+        .nav{
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+        }
+        .sideber{
+            grid-area: sideber;
+        }
+        .advertisment{
+            grid-area: adver;
+        }
+        footer{
+            grid-area: footer;
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-areas: 
+            "h h h h"
+            "nav main main sideber"
+            "nav main main adver"
+            "footer footer footer footer"
+            ;
+        }
+        .sideber{
+            margin-bottom: 20px;
+            margin-top: 20px;
+            height: 200px;
+        }
+        .advertisment{
+            height: 200px;
+            /* margin-top: 20px; */
+        }
+        /* small devaice */
+        @media screen and (max-width: 576px) {
+            .container{
+            display: grid;
+            gap: 20px;
+            grid-template-areas: 
+            "h "
+            "nav "
+            "main "
+            "sideber"
+            "adver"
+            "footer "
+            ;
+        }
+        .sideber{
+            margin-bottom: 20px;
+        }
+        }
+        /* madium devaice  */
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            .container{
+            display: grid;
+            gap: 20px;
+            grid-template-areas: 
+            "h h h"
+            "nav nav nav "
+            "sideber main main"
+            "sidber main main"
+            "adver footer footer"
+            
+            ;
+        }
+        .sideber{
+            height: 400px;
+        }
+    }
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h1>The Header</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="">nav-1</a></li>
+            <li><a href="">nav-2</a></li>
+            <li><a href="">nav-3</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article>
+            <h3>main Article 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consectetur cumque doloremque et eos. Tempore corporis neque eaque maxime natus sapiente perferendis voluptates, porro, dolor quidem nobis expedita minima quaerat reiciendis dolorum obcaecati in excepturi eius deserunt voluptatum rerum nihil, dolorem facilis. Distinctio laborum aliquam voluptates, accusamus odio dicta non quaerat ducimus! Saepe perspiciatis illo amet harum quasi, aspernatur commodi reiciendis nisi enim earum, repellendus iusto nulla eos vitae? Repellendus amet velit natus aliquid explicabo magnam ea quibusdam ipsam. Ratione dolorum pariatur totam, saepe facilis rerum, accusamus voluptatibus provident aspernatur veritatis velit sapiente asperiores animi architecto culpa quod vel maxime.</p>
+        </article>
+        <article>
+            <h3>main Article 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consectetur cumque doloremque et eos. Tempore corporis neque eaque maxime natus sapiente perferendis voluptates, porro, dolor quidem nobis expedita minima quaerat reiciendis dolorum obcaecati in excepturi eius deserunt voluptatum rerum nihil, dolorem facilis. Distinctio laborum aliquam voluptates, accusamus odio dicta non quaerat ducimus! Saepe perspiciatis illo amet harum quasi, aspernatur commodi reiciendis nisi enim earum, repellendus iusto nulla eos vitae? Repellendus amet velit natus aliquid explicabo magnam ea quibusdam ipsam. Ratione dolorum pariatur totam, saepe facilis rerum, accusamus voluptatibus provident aspernatur veritatis velit sapiente asperiores animi architecto culpa quod vel maxime.</p>
+        </article>
+
+
+    </main>
+    <aside class="aside">
+        <div class="sideber">
+            <h4>sidber</h4>
+        </div>
+        <div class="advertisment">
+            <h4>advertisment</h4>
+        </div>
+    </aside>
+    <footer>
+        <h3>the footer</h3>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex layout</title>
+    <style>
+        .flex-box {
+            display: grid;
+
+            border: 2px solid;
+            height: 800px;
+            padding: 10px;
+            gap: 10px;
+            border-radius: 10px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            grid-column: 1/span 4;
+            grid-row: 1/span 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            border-radius: 10px;
+            /* width: ; */
+        }
+
+        .right {
+            /* border: 2px solid greenyellow; */
+            display: flex;
+            grid-column: 5/span 8;
+            grid-row: 1/span 4;
+            justify-content: center;
+            align-items: center;
+            background-color: grey;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 579px) {
+
+            .left {
+                /* border: 2px solid red; */
+                grid-column: 1/span 12;
+                grid-row: 1/span 1;
+                
+            }
+
+            .right {
+                /* border: 2px solid greenyellow; */
+                grid-column: 1/span 12;
+                grid-row: 2/span 3;
+                
+
+
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="flex-box">
+        <div class="left">
+            <h1>Left</h1>
+
+        </div>
+        <div class="right">
+            <h1>Right</h1>
+
+        </div>
+    </div>
+</body>
+
+</html>

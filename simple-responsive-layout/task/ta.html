@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex layout</title>
+    <style>
+        /* General container styling */
+.container {
+  display: flex;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+/* Left and Right section styling */
+.left, .right {
+  flex: 1;
+  padding: 20px;
+  margin: 5px;
+  border: 2px solid;
+}
+
+/* Desktop layout: Left and Right sections side by side */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* Mobile layout: Left and Right sections stacked */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">Left</div>
+        <div class="right">Right</div>
+      </div>
+      
+</body>
+
+</html>

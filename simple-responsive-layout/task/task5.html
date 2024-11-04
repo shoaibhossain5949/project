@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr );
+            gap: 20px;
+            /* border: 2px solid red; */
+            padding: 10px;
+            margin: 20px;
+            
+
+        }
+        .food{
+            display: grid;
+            grid-template-columns:  repeat(2, 1fr);
+            /* border: 2px solid; */
+            gap: 50px;
+            margin: 20px;
+
+        }
+        .food button{
+            width: 150px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+            font-size: medium;
+        }
+        .food img{
+            width: 100%;
+            /* max-width: 500px; */
+            /* border: 2px solid yellow; */
+            border-radius: 5px;
+            
+        }
+        .food-discription{
+            font-size: larger;
+            padding: 50px;
+            border: 2px solid;
+
+        }
+        .food-discription h2 p button{
+            margin-top: 10px;
+            
+        }
+
+
+        /* responsiv */
+
+
+        @media screen and (max-width: 579px) {
+
+            .food{
+            display: grid;
+            grid-template-columns:  repeat(1, 1fr);
+
+            /* border: 2px solid; */
+            gap: 50px;
+            margin: 20px;
+
+        }
+        #food2{
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+
+
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            
+                <img src="../imges/food.jpg" alt="">
+           
+            <div class="food-discription">
+                <h2>post Title will be here</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas aperiam debitis minus, veritatis placeat obcaecati. Dolorum asperiores reiciendis deleniti quasi eius aliquam quisquam, illum ex nulla libero dignissimos vitae inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure debitis nemo vero ut modi deserunt assumenda quod ad? Temporibus possimus veniam adipisci, voluptatum vitae ducimus blanditiis non fugit repudiandae fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto, distinctio, odit neque doloribus error corporis deserunt minima repellendus repudiandae reprehenderit non in molestiae, autem ratione accusantium nesciunt rerum dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quisquam quas dolorum eum sit repellat. Et perspiciatis alias, dolores quasi ab amet modi, delectus quae aliquid enim eius dignissimos beatae sunt quod tenetur nostrum iste quibusdam quia quo veniam inventore temporibus magni. Nesciunt reiciendis repudiandae quibusdam, dolor autem, rem cupiditate quam eaque qui nostrum, odio a deleniti tempora labore mollitia laboriosam. Ullam sunt ipsum nemo voluptatem porro vitae minus amet. Enim, voluptatibus. Eos impedit repellendus laboriosam corrupti accusantium neque aspernatur reprehenderit culpa atque at blanditiis nostrum harum est, doloremque reiciendis quaerat sint ad qui assumenda quia quidem minus beatae! Neque!</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="food" id="food2">
+            
+           
+            
+            <div class="food-discription">
+                <h2>post Title will be here</h2>
+                <p>Ut delectus, unde doloribus ipsa nemo molestias voluptates, dignissimos nulla similique, optio doloremque ducimus commodi mollitia totam accusantium beatae nesciunt id. Laudantium nihil corporis architecto adipisci sed quae, doloribus error Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus deserunt nam commodi, ullam veniam ratione animi? Impedit asperiores provident, expedita maiores voluptates cum delectus fuga temporibus doloremque iste perferendis laudantium Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, facilis distinctio ex obcaecati quo placeat sapiente voluptatibus quasi doloribus optio aliquid rerum eum facere officia id nemo explicabo debitis dolore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro voluptatem in explicabo animi? Inventore facilis blanditiis repellendus, dignissimos ullam necessitatibus quam recusandae? Dolor est, iure quibusdam quaerat perspiciatis accusantium, hic laborum sunt expedita obcaecati rem eligendi perferendis ullam dolores facilis. Praesentium sit eum alias sunt illo modi, aliquam nam amet labore repellendus obcaecati quia explicabo ut vel! Eos expedita tempore eveniet cupiditate, tenetur officiis. Voluptas, incidunt, ratione optio recusandae consectetur aperiam at nemo, adipisci illum odio commodi quae magnam sunt ipsa. Animi officiis quos dolore? Doloremque quidem, nostrum autem est ullam vitae facere aliquid dignissimos exercitationem voluptatibus itaque cumque vel.</p>
+                <button>Read More</button>
+
+            </div>
+            <img src="../imges/doctor.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

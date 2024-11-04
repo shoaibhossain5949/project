@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REsponsive Flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: aqua;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .item{
+            width: 200px;
+            height: 100px;
+            border: 2px solid red;
+            background-color: cadetblue;
+
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexib,e Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h3>box 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium nisi temporibus libero quas tempora repudiandae saepe? Necessitatibus numquam totam qui vel adipisci autem nostrum quos officiis voluptatibus. Dolorum dolores aliquam magnam fuga iure? Laborum impedit ut vero totam ea, mollitia accusantium optio quas! Pariatur beatae cupiditate minus quisquam eveniet adipisci et quod, sed libero commodi magnam ratione animi, laudantium nesciunt velit repellat assumenda in perferendis quidem quam, nulla consequatur excepturi? Omnis officiis ullam distinctio tempore quis delectus, deleniti amet illum sapiente odit obcaecati dolor similique repellendus magnam a non voluptatibus molestias at commodi dolore. Aperiam enim necessitatibus quos ex.</p>
+        </div>
+        <div class="box">
+            <h3>box 2</h3>
+            <p>Perferendis doloremque delectus vel vero magnam similique cumque, quasi atque distinctio culpa voluptates blanditiis unde expedita repellendus eum recusandae, necessitatibus quo. Odio exercitationem est, molestias ducimus consequuntur dignissimos, libero, expedita ab ex suscipit quia eos reprehenderit facere tempora hic aliquid quam? Explicabo repudiandae corporis vero! Natus, neque enim. Doloremque illum, voluptatum quos magnam atque consectetur est illo quam culpa magni at, corrupti ut. Itaque amet harum ipsa, quidem nesciunt earum quos ex odio sit nam non ea sint! Et, voluptate, vero repellat cum veritatis temporibus voluptatibus illo eius praesentium nostrum dignissimos rem porro laboriosam minima aliquam magnam quam. Quibusdam, dolorem!</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+    </div>
+</body>
+</html>

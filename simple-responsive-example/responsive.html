@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+        .box{
+            background-color: aqua;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .item{
+            width: 200px;
+            height: 100px;
+            background-color: blanchedalmond;
+            border: 2px solid red;
+
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexbox</h2>
+   <div class="container">
+    <div class="box">
+        <h3>first box</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sint similique quidem corporis autem voluptate obcaecati molestiae tempore quas voluptas facere aperiam iure neque modi nisi unde laudantium dolorem voluptates saepe ducimus fuga nostrum porro velit ullam. Id accusantium exercitationem corporis animi. Asperiores perspiciatis impedit nesciunt earum. Dolor fugiat distinctio neque voluptatem ipsum voluptas in, amet tempore maxime consectetur labore necessitatibus vel aspernatur illo quae placeat ipsa! Sit aliquid expedita, eligendi perferendis dolore nisi, totam consequatur, quibusdam numquam animi praesentium rem? Exercitationem, laborum accusamus vitae quas expedita fuga aliquam. Amet repellendus aperiam placeat fugit eaque qui! Iste omnis animi consequuntur!</p>
+    </div>
+    <div class="box">
+        <h3>Secound box</h3>
+        <p>Officiis distinctio quos dolore aperiam itaque officia autem quas molestiae rerum fuga laborum, temporibus pariatur, libero dolor voluptas cupiditate ex corrupti? Adipisci quo culpa dolore temporibus incidunt voluptas eaque fugiat ducimus unde ipsum molestias, beatae, provident sed inventore in. Quis quas voluptates incidunt consequatur dolorem delectus ipsam tempora, facilis amet maiores hic eaque explicabo ea, repellat quisquam iste, odio nesciunt! Dolore ipsam consequatur porro aliquam fuga nemo praesentium sed. Architecto expedita, at dicta doloremque aspernatur cupiditate, voluptatem pariatur minima velit commodi quae, vitae libero. Iusto perferendis aperiam quidem doloremque reprehenderit a blanditiis fugiat, harum, ipsam repellat itaque. Voluptatibus, et fugiat?</p>
+    </div>
+   </div>
+   <div class="container2">
+    <div class="item">item-1</div>
+    <div class="item">item-2</div>
+    <div class="item">item-3</div>
+    <div class="item">item-4</div>
+    <div class="item">item-5</div>
+    <div class="item">item-6</div>
+    <div class="item">item-7</div>
+    <div class="item">item-8</div>
+    <div class="item">item-9</div>
+    <div class="item">item-10</div>
+   </div>
+</body>
+</html>
